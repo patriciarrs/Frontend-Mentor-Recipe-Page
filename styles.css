@@ -31,6 +31,8 @@ html {
 
 .card {
   background-color: var(--white);
+  border-radius: 24px;
+  margin: 0 auto;
   max-width: 73.6rem;
 }
 
@@ -45,6 +47,7 @@ html {
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 4rem clamp(3.2rem, 2.437rem + 2.036vw, 4rem);
+  text-align: left;
 }
 
 .title {
@@ -74,6 +77,10 @@ html {
   font-size: 2.8rem;
 }
 
+.hr {
+  border: 1px solid var(--stone150);
+}
+
 ::marker {
   color: var(--brown800);
   font-weight: bold;
@@ -81,6 +88,7 @@ html {
 
 .table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .th,
