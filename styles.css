@@ -36,6 +36,10 @@ html {
   max-width: 73.6rem;
 }
 
+.figure {
+  margin: 0;
+}
+
 .image {
   display: block;
   max-width: 100%;
@@ -54,10 +58,20 @@ html {
   color: var(--stone900);
   font-family: "Young Serif", serif;
   font-size: 3.6rem;
+  margin: 0 0 2.4rem;
+}
+
+.copy {
+  margin: 0;
+}
+
+.section {
+  margin: 3.2rem 0 0;
 }
 
 .highlighted-section {
   background-color: var(--rose50);
+  padding: 2.4rem;
 }
 
 .subtitle {
@@ -65,29 +79,60 @@ html {
   font-family: "Outfit", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  margin: 0 0 1.6rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+::marker {
+  color: var(--brown800);
+  font-variant-numeric: proportional-nums;
+  font-weight: bold;
+}
+
+.unordered-list ::marker {
+  font-size: 1.2rem;
+}
+
+.list-item {
+  margin: 0 0 0.8rem 0;
+}
+
+.list-copy {
+  display: inline-block;
+  margin: 0 0 0 1.6rem;
+}
+
+.middle-copy {
+  vertical-align: middle;
 }
 
 .bold-copy {
   font-weight: bold;
 }
 
+.top-copy {
+  vertical-align: top;
+}
+
 .section-title {
   color: var(--brown800);
   font-family: "Young Serif", serif;
   font-size: 2.8rem;
+  margin: 0 0 2.4rem;
 }
 
 .hr {
   border: 1px solid var(--stone150);
-}
-
-::marker {
-  color: var(--brown800);
-  font-weight: bold;
+  margin: 3.2rem 0 0;
 }
 
 .table {
   border-collapse: collapse;
+  margin: 2.4rem 0 0;
   width: 100%;
 }
 
@@ -96,9 +141,15 @@ html {
   border-bottom: 1px solid var(--stone150);
 }
 
+.th {
+  font-weight: normal;
+  padding: 1.2rem 0 1.2rem 3.2rem;
+}
+
 .td {
   color: var(--brown800);
   font-weight: bold;
+  padding: 1.2rem 0 1.2rem 0.8rem;
 }
 
 .footer {
@@ -116,7 +167,11 @@ html {
 }
 
 @media (min-width: 769px) {
+  .figure {
+    margin: 4rem 4rem 0;
+  }
+
   .image {
-    padding: 4rem;
+    border-radius: 24px;
   }
 }
