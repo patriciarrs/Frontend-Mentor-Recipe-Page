@@ -20,13 +20,14 @@ html {
 .body {
   background-color: var(--stone100);
   margin: 0;
-  min-height: 100vh;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+  text-align: left;
 }
 
 .card {
@@ -47,11 +48,7 @@ html {
 
 .content {
   color: var(--stone600);
-  font-family: "Outfit", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
   padding: 4rem clamp(3.2rem, 2.437rem + 2.036vw, 4rem);
-  text-align: left;
 }
 
 .title {
@@ -62,6 +59,7 @@ html {
 }
 
 .copy {
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -103,6 +101,7 @@ html {
 
 .list-copy {
   display: inline-block;
+  line-height: 1.5;
   margin: 0 0 0 1.6rem;
 }
 
@@ -139,6 +138,7 @@ html {
 .th,
 .td {
   border-bottom: 1px solid var(--stone150);
+  line-height: 1.5;
 }
 
 .th {
