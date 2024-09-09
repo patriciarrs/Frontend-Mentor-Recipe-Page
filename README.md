@@ -15,7 +15,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
     - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
     - [List item marker and text alignment](#list-item-marker-and-text-alignment)
     - [`border-collapse` CSS property](#border-collapse-css-property)
-- [Useful resources](#useful-resources)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
