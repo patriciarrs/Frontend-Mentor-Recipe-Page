@@ -33,7 +33,7 @@ html {
 .card {
   background-color: var(--white);
   border-radius: 24px;
-  margin: 0 auto;
+  margin: 12.8rem auto;
   max-width: 73.6rem;
 }
 
