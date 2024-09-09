@@ -5,18 +5,17 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Table of contents
 
 - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-      - [HTML5 semantic elements: `article` vs `section`](#html5-semantic-elements-article-vs-section)
-      - [`::marker` CSS pseudo-element](#marker-css-pseudo-element)
-      - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
-      - [List item marker and text alignment](#list-item-marker-and-text-alignment)
-      - [`border-collapse` CSS property](#border-collapse-css-property)
-    - [Useful resources](#useful-resources)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+    - [HTML5 semantic elements: `article` vs `section`](#html5-semantic-elements-article-vs-section)
+    - [`::marker` CSS pseudo-element](#marker-css-pseudo-element)
+    - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
+    - [List item marker and text alignment](#list-item-marker-and-text-alignment)
+    - [`border-collapse` CSS property](#border-collapse-css-property)
+- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
