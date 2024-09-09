@@ -5,18 +5,18 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-    - [HTML5 semantic elements: `article` vs `section`](#html5-semantic-elements-article-vs-section)
-    - [`::marker` CSS pseudo-element](#marker-css-pseudo-element)
-    - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
-    - [List item marker and text alignment](#list-item-marker-and-text-alignment)
-    - [`border-collapse` CSS property](#border-collapse-css-property)
-  - [Useful resources](#useful-resources)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+      - [HTML5 semantic elements: `article` vs `section`](#html5-semantic-elements-article-vs-section)
+      - [`::marker` CSS pseudo-element](#marker-css-pseudo-element)
+      - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
+      - [List item marker and text alignment](#list-item-marker-and-text-alignment)
+      - [`border-collapse` CSS property](#border-collapse-css-property)
+    - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -50,23 +50,23 @@ I learned the differences between the `article` and `section` elements.
 
 - Self-contained composition intended to be independently distributable or reusable.
 
-- Examples: forum post, magazine or newspaper article, blog entry, product card, user-submitted comment, interactive widget or gadget, or any other independent item of content.
+- Examples: a forum post, a magazine or newspaper article, a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent content item.
 
-- Each `article` should including a heading.
+- Each `article` should include a heading.
 
 ##### `section`
 
 - Generic standalone section of a document, which doesn't have a more specific semantic element to represent it.
 
-- As an example, a list of search results or a map display and its controls don't have specific elements, and could be put inside a `section`.
+- For example, a list of search results or a map display and its controls don't have specific elements, and could be put inside a `section`.
 
 - Alternatives:
 
-  - Navigation menu - `nav`.
-  - Atomic unit of content that makes sense as a standalone piece - `article`.
-  - Useful tangential information that works alongside the main content, but is not directly part of it (like related links, or an author bio) - `aside`.
-  - Main content area of a document - `main`.
-  - Only using the element as a styling wrapper - `div`.
+- Navigation menu - `nav`.
+    - Atomic unit of content that makes sense as a standalone piece - `article`.
+    - Useful tangential information that works alongside the main content, but is not directly part of it (like related links, or an author bio) - `aside`.
+    - The main content area of a document - `main`.
+    - Only using the element as a styling wrapper - `div`.
 
 - Sections should always have a heading, with very few exceptions, for example, a secondary navigation mechanism or some kind of button bar for controlling the app.
 
@@ -92,7 +92,7 @@ Using the value `proportional-nums` it was possible to match the given design fo
 
 ```css
 ::marker {
-  font-variant-numeric: proportional-nums;
+  font-variant-numeric: proportional-nums;
 }
 ```
 
@@ -100,7 +100,7 @@ Using the value `proportional-nums` it was possible to match the given design fo
 
 #### List item marker and text alignment
 
-By wrapping the text inside an `li` element with another element, it is possible to match the given design for the text alignment relative to the markers.
+By wrapping the text inside a `li` element with another element, it is possible to match the given design for the text alignment relative to the markers.
 
 The inner element should have `display: inline-block;` and then we can use the `vertical-align` property as needed.
 
