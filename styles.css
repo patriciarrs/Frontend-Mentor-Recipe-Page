@@ -7,6 +7,13 @@
   --brown800: hsl(14, 45%, 36%);
   --rose800: hsl(332, 51%, 32%);
   --rose50: hsl(330, 100%, 98%);
+  --desktop1: normal 4rem/1 "Young Serif", serif;
+  --mobile1: normal 3.6rem/1 "Young Serif", serif;
+  --desktop2: normal 2.8rem/1 "Young Serif", serif;
+  --desktop3: 600 2rem/1 "Outfit", sans-serif;
+  --desktop4: normal 1.6rem/1.5 "Outfit", sans-serif;
+  --desktop4-list: normal 1.6rem/1 "Outfit", sans-serif;
+  --desktop4-bold: bold 1.6rem/1.5 "Outfit", sans-serif;
 }
 
 * {
@@ -25,8 +32,7 @@ html {
 .main {
   display: flex;
   flex-direction: column;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.6rem;
+  font: var(--desktop4);
   text-align: left;
 }
 
@@ -53,8 +59,7 @@ html {
 
 .title {
   color: var(--stone900);
-  font-family: "Young Serif", serif;
-  font-size: 3.6rem;
+  font: var(--mobile1);
   margin: 0 0 2.4rem;
 }
 
@@ -74,13 +79,12 @@ html {
 
 .subtitle {
   color: var(--rose800);
-  font-family: "Outfit", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
+  font: var(--desktop3);
   margin: 0 0 1.6rem;
 }
 
 .list {
+  font: var(--desktop4-list);
   margin: 0;
   padding: 0 0 0 24px;
 }
@@ -95,7 +99,7 @@ html {
   font-size: 1.2rem;
 }
 
-.list-item {
+.list-item:not(:last-child) {
   margin: 0 0 0.8rem 0;
 }
 
@@ -119,8 +123,7 @@ html {
 
 .section-title {
   color: var(--brown800);
-  font-family: "Young Serif", serif;
-  font-size: 2.8rem;
+  font: var(--desktop2);
   margin: 0 0 2.4rem;
 }
 
@@ -135,21 +138,36 @@ html {
   width: 100%;
 }
 
-.th,
-.td {
+.th:not(.last-row-th),
+.td:not(.last-row-td) {
   border-bottom: 1px solid var(--stone150);
-  line-height: 1.5;
 }
 
 .th {
-  font-weight: normal;
+  font: var(--desktop4);
   padding: 1.2rem 0 1.2rem 3.2rem;
+}
+
+.first-row-th {
+  padding: 0 0 1.2rem 3.2rem;
+}
+
+.last-row-th {
+  padding: 1.2rem 0 0 3.2rem;
 }
 
 .td {
   color: var(--brown800);
-  font-weight: bold;
+  font: var(--desktop4-bold);
   padding: 1.2rem 0 1.2rem 0.8rem;
+}
+
+.first-row-td {
+  padding: 0 0 1.2rem 0.8rem;
+}
+
+.last-row-td {
+  padding: 1.2rem 0 0 0.8rem;
 }
 
 .footer {
@@ -173,5 +191,9 @@ html {
 
   .image {
     border-radius: 24px;
+  }
+
+  .title {
+    font: var(--desktop1);
   }
 }
