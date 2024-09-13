@@ -135,6 +135,7 @@ html {
 .table {
   border-collapse: collapse;
   margin: 2.4rem 0 0;
+  table-layout: fixed;
   width: 100%;
 }
 
