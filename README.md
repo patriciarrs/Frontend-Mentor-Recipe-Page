@@ -14,7 +14,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
     - [`::marker` CSS pseudo-element](#marker-css-pseudo-element)
     - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
     - [List item marker and text alignment](#list-item-marker-and-text-alignment)
-    - [`border-collapse` CSS property](#border-collapse-css-property)
+    - [Styling the `table` element](#styling-the-table-element)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -118,13 +118,22 @@ span {
 
 ---
 
-#### `border-collapse` CSS property
+#### Styling the `table` element
 
 Defining `border-collapse: collapse;` on the `table` element sets the cells inside it to have a shared border.
 
 ```css
 table {
   border-collapse: collapse;
+}
+```
+
+Defining `table-layout: fixed;` on the `table` element, with an explicitly specified `width`, makes the columns have the same width.
+
+```css
+table {
+  table-layout: fixed;
+  width: 100%;
 }
 ```
 
