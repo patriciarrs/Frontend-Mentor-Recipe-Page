@@ -27,6 +27,7 @@ html {
 .body {
   background-color: var(--stone100);
   margin: 0;
+  position: relative;
 }
 
 .main {
@@ -38,8 +39,6 @@ html {
 
 .card {
   background-color: var(--white);
-  border-radius: 24px;
-  margin: 12.8rem auto;
   max-width: 73.6rem;
 }
 
@@ -97,6 +96,10 @@ html {
 
 .unordered-list ::marker {
   font-size: 1.2rem;
+}
+
+.list-item {
+  line-height: 1.5;
 }
 
 .list-item:not(:last-child) {
@@ -172,7 +175,9 @@ html {
 }
 
 .footer {
+  bottom: 0;
   font-style: italic;
+  position: absolute;
   width: 100%;
 }
 
@@ -186,6 +191,10 @@ html {
 }
 
 @media (min-width: 769px) {
+  .card {
+    margin: 12.8rem auto;
+  }
+
   .figure {
     margin: 4rem 4rem 0;
   }
