@@ -73,6 +73,7 @@ html {
 
 .highlighted-section {
   background-color: var(--rose50);
+  border-radius: 12px;
   padding: 2.4rem;
 }
 
@@ -88,6 +89,14 @@ html {
   padding: 0 0 0 24px;
 }
 
+.ordered-list .list-item {
+  line-height: 1.5;
+}
+
+.list-item:not(:last-child) {
+  margin: 0 0 0.8rem 0;
+}
+
 ::marker {
   color: var(--brown800);
   font-variant-numeric: proportional-nums;
@@ -96,14 +105,6 @@ html {
 
 .unordered-list ::marker {
   font-size: 1.2rem;
-}
-
-.list-item {
-  line-height: 1.5;
-}
-
-.list-item:not(:last-child) {
-  margin: 0 0 0.8rem 0;
 }
 
 .list-copy {
@@ -192,6 +193,7 @@ html {
 
 @media (min-width: 769px) {
   .card {
+    border-radius: 24px;
     margin: 12.8rem auto;
   }
 
