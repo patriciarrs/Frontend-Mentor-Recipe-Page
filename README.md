@@ -68,7 +68,7 @@ I learned the differences between the `article` and `section` elements.
     - The main content area of a document - `main`.
     - Only using the element as a styling wrapper - `div`.
 
-- Sections should always have a heading, with very few exceptions, for example, a secondary navigation mechanism or some kind of button bar for controlling the app.
+- Sections should always have a heading, with few exceptions, such as a secondary navigation mechanism or a button bar for controlling the app.
 
 ---
 
@@ -78,8 +78,8 @@ The `min()` CSS function lets us set the smallest value as the value of a CSS pr
 
 I used this function to set the width of the card:
 
-* For tablet size screens, the width of the card is 80vw (smaller than 73.6rem).
-* For desktop size screens, the width of the card is 73.6rem (smaller than 80vw).
+- For tablet-size screens, the width of the card is 80vw (smaller than 73.6rem).
+- For desktop-size screens, the width of the card is 73.6rem (smaller than 80vw).
 
 So, writing:
 
@@ -172,7 +172,7 @@ table {
 - [\<article>: The Article Contents element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) - This helped me remember the details of usage for the `article` HTML element.
 - [\<section>: The Generic Section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section) - This helped me remember the details of usage for the `section` HTML element.
 - [font-variant-numeric](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric) - This helped me to understand this property.
-- [CSS min(), max(), and clamp()](https://web.dev/articles/min-max-clamp) - This is an amazing article which helped me finally understand CSS `min()` and `max()` functions. I'd recommend it to anyone still learning this concept.
+- [CSS min(), max(), and clamp()](https://web.dev/articles/min-max-clamp) - This is an amazing article that helped me finally understand CSS `min()` and `max()` functions. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
