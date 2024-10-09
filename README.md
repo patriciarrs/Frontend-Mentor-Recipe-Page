@@ -11,6 +11,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
     - [HTML5 semantic elements: `article` vs `section`](#html5-semantic-elements-article-vs-section)
+    - [`min()` CSS function](#min-css-function)
     - [`::marker` CSS pseudo-element](#marker-css-pseudo-element)
     - [`font-variant-numeric` CSS property](#font-variant-numeric-css-property)
     - [List item marker and text alignment](#list-item-marker-and-text-alignment)
@@ -68,6 +69,34 @@ I learned the differences between the `article` and `section` elements.
     - Only using the element as a styling wrapper - `div`.
 
 - Sections should always have a heading, with very few exceptions, for example, a secondary navigation mechanism or some kind of button bar for controlling the app.
+
+---
+
+#### `min()` CSS function
+
+The `min()` CSS function lets us set the smallest value as the value of a CSS property.
+
+I used this function to set the width of the card:
+
+* For tablet size screens, the width of the card is 80vw (smaller than 73.6rem).
+* For desktop size screens, the width of the card is 73.6rem (smaller than 80vw).
+
+So, writing:
+
+```css
+.card {
+  max-width: 73.6rem;
+  width: 80vw;
+}
+```
+
+Is equivalent to writing:
+
+```css
+.card {
+  width: min(80vw, 73.6rem);
+}
+```
 
 ---
 
@@ -143,6 +172,7 @@ table {
 - [\<article>: The Article Contents element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) - This helped me remember the details of usage for the `article` HTML element.
 - [\<section>: The Generic Section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section) - This helped me remember the details of usage for the `section` HTML element.
 - [font-variant-numeric](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric) - This helped me to understand this property.
+- [CSS min(), max(), and clamp()](https://web.dev/articles/min-max-clamp) - This is an amazing article which helped me finally understand CSS `min()` and `max()` functions. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
