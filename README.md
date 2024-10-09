@@ -99,7 +99,8 @@ Using the value `proportional-nums` it was possible to match the given design fo
 
 #### List item marker and text alignment
 
-By wrapping the text inside a `li` element with another element, it is possible to match the given design for the text alignment relative to the markers.
+For the unordered lists, in smaller screens, the marker is vertically aligned in the middle relative to the text.
+By wrapping the text inside a `li` element with another element (`span`), it is possible to match the given design.
 
 The inner element should have `display: inline-block;` and then we can use the `vertical-align` property as needed.
 

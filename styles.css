@@ -89,12 +89,16 @@ html {
   padding: 0 0 0 24px;
 }
 
-.ordered-list .list-item {
-  line-height: 1.5;
+.list-item {
+  padding: 0 0 0 1.6rem;
 }
 
 .list-item:not(:last-child) {
-  margin: 0 0 0.8rem 0;
+  padding: 0 0 0.8rem 1.6rem;
+}
+
+.ordered-list .list-item {
+  line-height: 1.5;
 }
 
 ::marker {
@@ -110,7 +114,7 @@ html {
 .list-copy {
   display: inline-block;
   line-height: 1.5;
-  margin: 0 0 0 1.6rem;
+  vertical-align: middle;
 }
 
 .middle-copy {
@@ -119,10 +123,6 @@ html {
 
 .bold-copy {
   font-weight: bold;
-}
-
-.top-copy {
-  vertical-align: top;
 }
 
 .section-title {
